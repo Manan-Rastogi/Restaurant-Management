@@ -8,7 +8,7 @@ import (
 func UserRoutes(routes *gin.Engine) {
 	users := routes.Group("users")
 
-	users.GET("", controllers.GetUser)
+	users.GET("", controllers.GetUsers)
 	users.GET(":user_id", controllers.GetUser)
 	users.POST("signup", controllers.Signup)
 	users.POST("login", controllers.Login)

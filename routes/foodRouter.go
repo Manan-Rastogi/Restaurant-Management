@@ -10,6 +10,6 @@ func FoodRoutes(routes *gin.Engine) {
 
 	foods.GET("", controllers.GetFoods)
 	foods.GET(":food_id", controllers.GetFood)
-	foods.POST("foods", controllers.CreateFoods)
+	foods.POST("", controllers.CreateFoods)
 	foods.PATCH(":food_id", controllers.UpdateFood)
 }
